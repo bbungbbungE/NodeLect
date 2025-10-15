@@ -238,7 +238,7 @@ const findAndSaveUser=async(Users)=>{
     }
 }
 */
-//AJAX 서버로 요청을 보내는 코드
+
 
 
    
