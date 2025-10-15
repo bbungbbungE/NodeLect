@@ -1,4 +1,4 @@
-console.log("hello world");
+/*console.log("hello world");
 
 function first(){
     second();
@@ -35,15 +35,16 @@ const sayNode = function() {
 }
 let es = 'ES';
 const newObj = {
-    Func: sayNode,
+    saynode: sayNode,
     sayJS(){
         console.log('JS');
     },
     [es+6] : 'Fantastic'
 }
 
-newObj.Func();
+
 newObj.sayJS();
+newObj.saynode();
 console.log(newObj.ES6);
 
 var relationship1 = {
@@ -54,10 +55,27 @@ var relationship1 = {
         var that = this;
         this.add.forEach(addlist=>{
             this.friends.forEach(friend=>{
-                console.log(this.name,friend,addlist);
+                console.log(this.name,friends,addlist);
         })
         
         });
     },
 };
+relationship1.logFriends();*/
+var relationship1={
+    name : ['zero','one'],
+    friends:['nero','hero','xero'],
+    add:['한누리관','송백관'],
+    logFriends:function(){
+        this.add.forEach(add=>{
+        this.friends.forEach(friends=>{
+            this.name.forEach(name=>{
+                console.log(name,friends,add);
+            })
+        })
+        })
+    }
+
+}
 relationship1.logFriends();
+
